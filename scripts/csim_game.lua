@@ -28,7 +28,7 @@ local csim_game = {}
 
 function csim_game.load()
 	-- Load map
-	map = sti("map/MAP4.lua")
+	map = sti("map/MAP1.lua")
 
 	-- Load characters
 	player, enemies = csim_game.loadCharacters()
@@ -75,7 +75,7 @@ function csim_game.load()
 	sounds['track1']:setLooping(true)
 	sounds['track1']:play()
 
-	timeleft = 121
+	timeleft = 15
 
 end
 
@@ -165,6 +165,7 @@ function csim_game.detectDynamicCollision(dynamic_objs, obj_type)
 
 				if(csim_math.checkBoxCollision(min_a, max_a, min_b, max_b)) then
 					if(obj_type == "enemies") then
+							love.audio.stop()
 							love.load()
 					end
 					if(obj_type == "items") then
@@ -221,6 +222,7 @@ function csim_game.update(dt)
 
 	if (player.pos.y < 112 and player.pos.x < 112) then
 		love.window.showMessageBox("Congragulations", "You Won!", "info", true)
+		love.audio.stop()
 		love.load()
 	end
 
@@ -252,8 +254,8 @@ function csim_game.update(dt)
 	-- end
 
 	-- Set background color
-	love.graphics.setBackgroundColor(map.backgroundcolor[1]/255,
-		map.backgroundcolor[2]/255, map.backgroundcolor[3]/255)
+	-- love.graphics.setBackgroundColor(map.backgroundcolor[1]/255,
+	-- map.backgroundcolor[2]/255, map.backgroundcolor[3]/255)
 end
 
 function csim_game.text(text, textx, texty)
@@ -262,6 +264,7 @@ function csim_game.text(text, textx, texty)
 
 	if (timeleft<0) then
 		love.window.showMessageBox("Time's Up", "You Lose", "info", true)
+		sounds['track1']:setLooping(false)
 		csim_game.load()
 	end
 

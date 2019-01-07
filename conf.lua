@@ -1,10 +1,10 @@
 --[[
-
-
+     
+     
 
     -- Game Conf. --
     Author: Darren Shih
-
+     
 ]]
 
 function love.conf(t)
