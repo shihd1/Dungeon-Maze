@@ -1,10 +1,10 @@
 --[[
-
-
+    CSIM 2018
+    Lecture <>
 
     -- Main Program --
-    Author: Darren Shih
-
+    Author: Lucas N. Ferreira
+    lferreira@ucsc.edu
 ]]
 
 -- Loading external libraries

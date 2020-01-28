@@ -1,15 +1,15 @@
 --[[
-
-
+    CSIM 2018
+    Lecture 6
 
     -- Game Conf. --
-    Author: Darren Shih
-
+    Author: Lucas N. Ferreira
+    lferreira@ucsc.edu
 ]]
 
 function love.conf(t)
-    t.title = "DungeonMaze"	        	-- The title of the window the game is in (string)
-    t.author = "Darren Shih"	-- The author of the game (string)
+    t.title = "Lec7"	        	-- The title of the window the game is in (string)
+    t.author = "Lucas N. Ferreira"	-- The author of the game (string)
     t.window.width = 1024			-- The window width (number)
     t.window.height = 768			-- The window height (number)
     t.window.fullscreen = false		-- Enable fullscreen (boolean)

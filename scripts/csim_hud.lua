@@ -1,10 +1,10 @@
 --[[
-     
-     
+    CSIM 2018
+    Lecture 7
 
     -- Game Program --
-    Author: Darren Shih
-     
+    Author: Lucas N. Ferreira
+    lferreira@ucsc.edu
 ]]
 
 local csim_hud = {}

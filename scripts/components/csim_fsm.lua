@@ -1,10 +1,10 @@
 --[[
-     
-     
+    CSIM 2018
+    Lecture 8
 
     -- FSM Library --
-    Author: Darren Shih
-     
+    Author: Lucas N. Ferreira
+    lferreira@ucsc.edu
 ]]
 
 local csim_fsm = {}

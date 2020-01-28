@@ -1,10 +1,10 @@
 --[[
-     
-     
+    CSIM 2018
+    Lecture 7
 
     -- Player Program --
-    Author: Darren Shih
-     
+    Author: Lucas N. Ferreira
+    lferreira@ucsc.edu
 ]]
 
 local csim_player = require "scripts.objects.csim_object"

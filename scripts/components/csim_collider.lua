@@ -1,10 +1,10 @@
 --[[
-     
-     
+    CSIM 2018
+    Lecture 6
 
     -- Collider Library --
-    Author: Darren Shih
-     
+    Author: Lucas N. Ferreira
+    lferreira@ucsc.edu
 ]]
 
 local csim_vector = require "scripts.csim_vector"
